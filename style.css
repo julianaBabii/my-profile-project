@@ -1,6 +1,6 @@
 :root {
-  --primary-color: rgb(230, 230, 63);
-  --secondary-color: #0dcaf0;
+  --primary-color: #8a2be2;
+  --secondary-color: pink;
   --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 h1.name {
@@ -16,15 +16,27 @@ h1.name {
   justify-content: space-evenly;
 }
 button.nav {
+  margin: 20px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
   border-radius: 4px;
   padding: 20px 15px;
-
   text-decoration: none;
   text-transform: capitalize;
-  background: var(--primary-color);
-
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+.contact {
+  text-decoration: none;
+  text-transform: capitalize;
   color: white;
 }
+.contact:visited {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+
 .link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -48,20 +60,14 @@ h2 {
   font-size: 32px;
 }
 
-button {
-  margin: 20px;
-  border: 1px solid var(--primary-color);
-
-  border-radius: 8px;
-  background-color: var(--primary-color);
-}
 .mail {
   text-decoration: none;
   color: black;
   font-size: 20px;
   text-align: center;
 }
-button:hover {
+.link:hover {
   background-color: var(--secondary-color);
   border: var(--secondary-color);
+  color: var(--primary-color);
 }
